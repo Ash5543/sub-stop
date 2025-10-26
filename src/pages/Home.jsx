@@ -1,4 +1,5 @@
 import "./css/Home.css";
+import Option from ".././components/Option";
 
 const Home=()=>{
     return(
@@ -13,7 +14,10 @@ const Home=()=>{
                 </section>
             </div>
             <div id="options" class="columns-mobile">
-                
+                <Option name="Menu" image="images/lettuce.jpg" />
+                <Option name="About" image="images/tomato.jpg" />
+                <Option name="Order" image="images/cheese.jpg" />
+                <Option name="Locations" image="images/meat.png" />
             </div>
         </main>
     );

@@ -1,0 +1,13 @@
+#option{
+    margin:auto;
+    margin-right:20px auto;
+    margin-top:30px;
+    background:#545677;
+}
+#option img{
+    height:200px;
+    width:250px;
+}
+#option h2{
+    color:white;
+}

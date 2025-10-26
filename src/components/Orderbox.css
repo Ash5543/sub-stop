@@ -1,0 +1,31 @@
+.sandwich{
+    width:fit-content;
+    padding-left: 0px;     
+    margin: 20px;
+    position:relative;
+    background:beige; 
+    text-align: center; 
+}
+.sandwich img{
+    width:100%;
+}
+
+@media only screen and (min-width: 768px){
+    .sandwich{
+        margin:auto;
+        margin-bottom: 20px;
+        width:80%;
+        height:200px;
+    }
+    .sandwich-p{
+        padding-left:20px;
+    }
+    .number{
+        position:absolute;
+        right:5%;
+        top:50%;
+    }
+    .sandwich img{
+        width:25%;
+    }
+}

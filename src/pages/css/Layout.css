@@ -41,6 +41,10 @@ h1{
     height:60px;
     width:150px;
 }
+.columns-mobile{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* Dont need yet, for toggle nav
 .hide-small{
     display:none;

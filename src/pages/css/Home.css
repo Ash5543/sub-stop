@@ -1,0 +1,18 @@
+#intro-img{
+    width:100%;
+}
+#intro-p h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (min-width: 768px){
+    #intro-img{
+        padding-left:50px;
+        max-width:600px;
+    }
+    #intro-p{
+        padding-left: 60px;
+        font-size: x-large;
+        width:500px;
+    }
+}

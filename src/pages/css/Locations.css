@@ -1,4 +1,25 @@
 #location section{
     background:beige;
-    margin: 50px;
+    margin: 30px;
+}
+#form{
+    padding:20px;
+}
+#map-sec{
+    width:85%;
+    height:100%;
+    margin:auto;
+}
+#map{
+    width:100%;
+    height:550px;
+}
+
+@media only screen and (min-width: 768px){
+    #map-sec{
+        margin-left:2%;
+        margin-right:0;
+        width:70%;
+    }
+
 }

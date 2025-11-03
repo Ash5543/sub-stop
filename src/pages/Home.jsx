@@ -1,12 +1,13 @@
 import "./css/Home.css";
 import Option from ".././components/Option";
+import { Link } from "react-router-dom";
 
 const Home=()=>{
     return(
         <main>
             <div id="intro" className="columns">
                 <section>
-                    <img id="intro-img" src="images/intro-img.jpg" alt="sub"></img>
+                    <img id="intro-img" src={`${process.env.PUBLIC_URL}/images/intro-img.jpg`} alt="sub"></img>
                 </section>
                 <section id="intro-p">
                     <h2>Become a member today!</h2>
@@ -14,10 +15,19 @@ const Home=()=>{
                 </section>
             </div>
             <div id="options" class="columns-mobile">
-                <Option name="Menu" image="images/lettuce.jpg" />
-                <Option name="About" image="images/tomato.jpg" />
-                <Option name="Order" image="images/cheese.jpg" />
-                <Option name="Locations" image="images/meat.png" />
+                <Link className="link" to="/menu">
+                    <Option name="Menu" image={`${process.env.PUBLIC_URL}/images/lettuce.jpg`} />
+                </Link>
+                <Link className="link" to="/about">
+                    <Option name="About" image={`${process.env.PUBLIC_URL}/images/tomato.jpg`} />
+                </Link>
+                <Link className="link" to="/order">
+                    <Option name="Order" image={`${process.env.PUBLIC_URL}/images/cheese.jpg`} />
+                </Link>
+                <Link className="link" to="/locations">
+                    <Option name="Locations" image={`${process.env.PUBLIC_URL}/images/meat.png`} />
+                </Link>
+               
             </div>
         </main>
     );

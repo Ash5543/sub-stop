@@ -45,17 +45,30 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-/* Dont need yet, for toggle nav
+
 .hide-small{
     display:none;
 }
-*/
+#togglenav{
+    margin-left:35px;
+    font-size: large;
+    padding-bottom:5px;
+}
 
 @media only screen and (min-width: 768px){
+    #togglenav{
+        display:none;
+    }
+    #main-nav ul {
+        display: flex !important; /* ensures nav always visible on desktop */
+    }
     .columns{
         display:flex;
     }
     #header nav li{
         padding-right:5px;
+    }
+    .hide-small{
+        display:block;
     }
 }

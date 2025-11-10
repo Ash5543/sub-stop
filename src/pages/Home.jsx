@@ -1,5 +1,6 @@
 import "./css/Home.css";
 import Option from ".././components/Option";
+import Slideshow from ".././components/Slideshow";
 import { Link } from "react-router-dom";
 
 const Home=()=>{
@@ -7,7 +8,7 @@ const Home=()=>{
         <main>
             <div id="intro" className="columns">
                 <section>
-                    <img id="intro-img" src={`${process.env.PUBLIC_URL}/images/intro-img.jpg`} alt="sub"></img>
+                    <Slideshow />
                 </section>
                 <section id="intro-p">
                     <h2>Become a member today!</h2>

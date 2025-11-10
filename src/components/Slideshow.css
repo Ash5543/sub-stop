@@ -1,0 +1,31 @@
+
+#slideshow{
+    position:relative;
+}
+#slideshow img{
+    width:100%;
+}
+.arrow {
+    color:white;
+    text-decoration: none;
+    font-size:24px;
+    position:absolute;
+    top:45%;
+    background:rgba(27, 36, 51, 0.6);
+    border-radius:3px;
+    padding:5px 10px;
+}
+#right-arrow {
+    right:20px;
+}
+
+#left-arrow {
+    left:20px;
+}
+
+@media only screen and (min-width: 768px){
+    #slideshow{
+        margin-left:50px;
+        max-width:600px;
+    }
+}

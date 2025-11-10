@@ -22,7 +22,7 @@ const Menu=()=>{
             <div id="hot-menu" className="columns-mobile menu">
                 {sandwiches.map((sandwich)=>{
                     if(sandwich.hot=="true"){
-                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} />
+                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
                     }
                 })}
             </div>
@@ -30,7 +30,7 @@ const Menu=()=>{
             <div id="cold-menu" className="columns-mobile menu">
                {sandwiches.map((sandwich)=>{
                     if(sandwich.hot=="false"){
-                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} />
+                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
                     }
                 })}
             </div>

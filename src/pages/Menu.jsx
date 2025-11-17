@@ -21,7 +21,7 @@ const Menu=()=>{
 
     useEffect(()=>{
         const loadSandwiches = async() => {
-            const response = await axios.get("http://localhost:3000/api/sandwiches"); {/*https://sub-stop-server.onrender.com/api/sandwiches*/}
+            const response = await axios.get("https://sub-stop-server.onrender.com/api/sandwiches"); 
             setSandwiches(response.data);
         };
 
@@ -40,7 +40,7 @@ const Menu=()=>{
             <div id="hot-menu" className="columns-mobile menu">
                 {sandwiches.map((sandwich)=>{
                     if(sandwich.hot=="true"){
-                        return <Sandwich name={sandwich.name} image={"http://localhost:3000/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
+                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
                     }
                 })}
             </div>
@@ -48,7 +48,7 @@ const Menu=()=>{
             <div id="cold-menu" className="columns-mobile menu">
                {sandwiches.map((sandwich)=>{
                     if(sandwich.hot=="false"){
-                        return <Sandwich name={sandwich.name} image={"http://localhost:3000/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
+                        return <Sandwich name={sandwich.name} image={"https://sub-stop-server.onrender.com/"+sandwich.img} bread={sandwich.bread} toppings={sandwich.toppings} />
                     }
                 })}
             </div>

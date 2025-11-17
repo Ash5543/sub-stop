@@ -10,13 +10,13 @@ const AddSandwich=(props)=>{
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
     };
     const addToServer = async(event) => {
-        event.preventDefault(); //stops us from going to another page or refreshing
+        event.preventDefault();
         setResult("Sending...");
 
         const formData = new FormData(event.target);
         console.log(...formData);
         
-        const response = await fetch("http://localhost:3000/api/sandwiches", {
+        const response = await fetch("https://sub-stop-server.onrender.com/api/sandwiches", {
             "method":"POST",
             "body":formData
         });

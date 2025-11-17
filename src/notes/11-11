@@ -1,0 +1,7 @@
+//front end (adding something to json)
+//require, minimumlength, equivalent to server side, addtoserver event is submitting form event.target is the form event.target.reset blanks it
+//props.updatehouses(await response.json) response is the house sent to server
+
+//back end
+//get multer for images
+//const joi = require("joi") npm i joi, if it fucks up do console logs

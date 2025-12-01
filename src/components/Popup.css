@@ -2,21 +2,32 @@
 
 
 .w3-modal{
-    display:block;
+  display:block;
 }
 
 .padding{
-    padding-left:35px;
+  padding-left:35px;
 }
 
 .w3-container{
   padding:15px;
+  border:5px solid #688781;
+  background:#fbfaf5;
+  position:relative;
 }
 
-
+.edit-delete{
+  padding:5px;
+  padding-left:10px;
+  position:relative;
+  top:25px;
+}
 
 #popup {
   margin-left:10px;
+}
+.columns{
+  display:flex;
 }
 
 
